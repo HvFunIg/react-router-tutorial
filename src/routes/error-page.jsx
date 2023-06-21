@@ -1,4 +1,6 @@
-import { useRouteError } from "react-router-dom";
+import { 
+  useRouteError         //Возвращает все, что есть в ошибке ( которая вызвана через throw)
+} from "react-router-dom";
 
 export default function ErrorPage() {
   const error = useRouteError();
