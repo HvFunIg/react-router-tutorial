@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import {
-  createBrowserRouter,      // Роутер для Веб-проектов
+  // createBrowserRouter,      // Роутер для Веб-проектов
+  createHashRouter,      // Роутер для Github-Pages
   RouterProvider,           // Рендер данных из роутера
 } from "react-router-dom";
 
@@ -32,7 +33,7 @@ import './css/router_tutorial.css'
 
 // import reportWebVitals from './reportWebVitals';
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <Root />,
